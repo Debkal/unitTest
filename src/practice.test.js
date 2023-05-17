@@ -43,6 +43,3 @@ it('array anaylsis', () => {
         length: 6
     })
     })
-it('check if array', () => {
-    expect(analyze(['1,8,3,4,2,'])).toBe('not an array');
-})

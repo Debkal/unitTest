@@ -75,6 +75,12 @@ class caesarModule{
     }
 }
 function analyze(array){
-
+    
+    array.sort(function(a,b){return a-b});
+    const sum = array.reduce((accumulator, currentValue) =>
+    accumulator + currentValue)
+    const avg = sum/array.length;
+    const result = {average: avg,min: array[0],max:array[array.length-1],length:array.length };
+    return result;
 }
 export {capitalize, reverse,Calc,caesarModule,analyze};
